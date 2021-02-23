@@ -47,7 +47,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_tas2560.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tas2560.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
+# Bluetooth
+PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
+
 # Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SCREEN_HEIGHT := 1512
 TARGET_SCREEN_WIDTH := 720
 
